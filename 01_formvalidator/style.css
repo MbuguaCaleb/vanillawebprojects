@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Raleway:wght@200&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f9fafb;
+  font-family: 'Raleway', sans-serif;
+  display: flex;
+  align-items: center; /*vertical centering*/
+  justify-content: center; /*horizontal centering*/
+  min-height: 100vh; /*Without Min Height it will not center vertically*/
+  margin: 0;
+}
+
+.container {
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+  width: 400px;
+}
+
+/*H2 is inside the container*/
+h2 {
+  text-align: center;
+  margin: 0 0 20px;
+}
+
+.form {
+  padding: 30px 40px;
+}
+
+/*Parent element Must be Relative when i want 
+to align Something Absolute*/
+.form-control {
+  margin-bottom: 10px;
+  padding-top: 20px;
+  position: relative;
+}
+
+/*labels are inline by default*/
+.form-control label {
+  color: #777;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.form-control input {
+  border: 2px solid #f0f0f0;
+  border-radius: 4px;
+  display: block;
+  width: 100%;
+  padding: 10px;
+  font-size: 14px;
+}
+
+.form-control input:focus {
+  outline: 0;
+  border-color: #777;
+}
